@@ -1,11 +1,28 @@
+/* Reset and Base Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+
+
+
 /* Mobile Devices (up to 600px) */
 @media (max-width: 600px) {
+
+    .swiper-container {
+        width: 100%;
+        max-width: 600px; 
+        margin: 0 auto;
+    }
+    
+    .swiper-slide {
+    text-align: center;
+    padding: 20px;
+    background-color: orange;
+    border: 1px solid white;
+    }
 
     header h1 {
         margin: 0;
@@ -16,17 +33,26 @@ body {
         background-color: yellow;
     }
 
+    main {
+        padding: 2rem;
+    }
+
     form {
         display: flex;
         flex-direction: column;
     }
 
+    h2 {
+        font-size: 24px;
+    }
+
     label {
         font-size: 24px;
         display: inline-block;
+        width: 150px;
+        margin-top: 1rem;
         margin-bottom: 1rem;
         text-align: left;
-        width: 150px;
     }
 
     input[type="text"],
@@ -37,8 +63,9 @@ body {
         padding: 1rem;
         margin-bottom: 1rem;
     }
-    input[type="radio"]{ 
-        margin-top: 0;       
+
+    input[type="radio"] {
+        margin-top: 0;
         margin-bottom: 2rem;
         width: 24px;
     }
@@ -46,7 +73,21 @@ body {
 
 /* Tablet & Desktop (601px and above) */
 @media (min-width: 601px) {
-    header h1{
+
+    .swiper-container {
+        width: 100%;
+        max-width: 600px; 
+        margin: 0 auto;
+    }
+    
+    .swiper-slide {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(89, 89, 228);
+    border: 1px solid white;
+    }
+
+    header h1 {
         color: white;
     }
 
@@ -55,50 +96,51 @@ body {
         background-color: #3498db;
     }
 
-    form {
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-rows: repeat(4, 1fr);
+    main {
+        padding: 2rem;
         max-width: 600px;
         margin: auto;
     }
 
-     label {
+    form {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    h2 {
         font-size: 20px;
         color: white;
-        display: inline;
-        width: 20%;
+    }
+
+    label {
+        font-size: 20px;
+        display: inline-block;
+        width: 150px;
         text-align: left;
         margin-top: 1rem;
-        width: 150px;
+        margin-bottom: 1rem;
     }
 
     input[type="text"],
     input[type="email"],
     input[type="tel"],
     textarea {
-        display: block;
-        text-align: left;
-        width: 90%;
+        width: 60%;
         padding: 1rem;
         margin-top: 0.5rem;
         margin-bottom: 2rem;
         border: 1px solid #ccc;
         border-radius: 0.5rem;
-    } 
+    }
 
-    input[type="radio"]{
+    input[type="radio"] {
         width: 1.5rem;
     }
 }
 
-
 header {
     text-align: center;
-    padding: 2rem;
-}
-
-main {
     padding: 2rem;
 }
 
@@ -111,11 +153,8 @@ input[type="submit"] {
     margin-top: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
 }
 
 input[type="submit"]:hover {
     background-color: #45a049;
 }
-
-
