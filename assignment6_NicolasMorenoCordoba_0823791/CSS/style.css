@@ -87,6 +87,10 @@ body {
     border: 1px solid white;
     }
 
+    .one, .two, .three{
+        grid-column: 1/ span 2;
+    }
+
     header h1 {
         color: white;
     }
@@ -111,6 +115,7 @@ body {
     h2 {
         font-size: 20px;
         color: white;
+        grid-column: 1/ span 2;
     }
 
     label {
