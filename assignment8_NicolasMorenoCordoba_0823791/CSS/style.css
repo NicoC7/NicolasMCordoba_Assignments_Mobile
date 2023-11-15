@@ -1,121 +1,31 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+:root {
+
+--blue:    #0d6efd;
+--indigo:  #6610f2;
+--purple:  #6f42c1;
+--pink:    #d63384;
+--red:     #dc3545;
+--orange:  #fd7e14;
+--yellow:  #ffc107;
+--green:   #198754;
+--teal:    #20c997;
+--cyan:    #0dcaf0;
 }
 
-/* Mobile Devices (up to 600px) */
-@media (max-width: 600px) {
-
-    header h1 {
-        margin: 0;
-        color: black;
-    }
-
-    body {
-        background-color: yellow;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    label {
-        font-size: 24px;
-        display: inline-block;
-        margin-bottom: 1rem;
-        text-align: left;
-        width: 150px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    textarea {
-        width: 90%;
-        padding: 1rem;
-        margin-bottom: 1rem;
-    }
-    input[type="radio"]{ 
-        margin-top: 0;       
-        margin-bottom: 2rem;
-        width: 24px;
+@media (max-width: 576px) {
+    body.bg-sm {
+        background-color: var(--indigo) !important; 
     }
 }
 
-/* Tablet & Desktop (601px and above) */
-@media (min-width: 601px) {
-    header h1{
-        color: white;
-    }
-
-    body {
-        font-size: 20px;
-        background-color: #3498db;
-    }
-
-    form {
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-rows: repeat(4, 1fr);
-        max-width: 600px;
-        margin: auto;
-    }
-
-     label {
-        font-size: 20px;
-        color: white;
-        display: inline;
-        width: 20%;
-        text-align: left;
-        margin-top: 1rem;
-        width: 150px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    textarea {
-        display: block;
-        text-align: left;
-        width: 90%;
-        padding: 1rem;
-        margin-top: 0.5rem;
-        margin-bottom: 2rem;
-        border: 1px solid #ccc;
-        border-radius: 0.5rem;
-    } 
-
-    input[type="radio"]{
-        width: 1.5rem;
+@media (min-width: 577px) and (max-width: 768px) {
+    .try {
+        background-color: #778899 !important;
     }
 }
 
-
-header {
-    text-align: center;
-    padding: 2rem;
+@media (min-width: 769px) {
+    body.bg-lg {
+        background-color: #F08080 !important; 
+    }
 }
-
-main {
-    padding: 2rem;
-}
-
-input[type="submit"] {
-    background-color: grey;
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 4px;
-    margin-top: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-

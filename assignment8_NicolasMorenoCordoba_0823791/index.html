@@ -2,36 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nicolas Family Trip - Santa Marta, Colombia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
-    <header>
-        <h1>Nicolas Moreno Cordoba</h1>
+<body class="bg-sm bg-dark  try">
+
+    <header class="text-center bg-info text-white py-4">
+        <h1 class="display-4"><strong>Nicolas Family Trip</strong></h1>
     </header>
-    <main>
-        <form>
-            <label for="full-name">Full Name:</label>
-            <input type="text" id="full-name" name="full-name">            
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email">
+    <div class="container mt-4">
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone">
+        <div class="row">
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
+            <div class="col-md-4 bg-warning p-4">
+                <h2>Santa Marta, Colombia</h2>
+                <p>Embark on a breathtaking journey to Santa Marta, where nature meets history. Nestled between the Caribbean Sea and the Sierra Nevada mountain range, Santa Marta offers diverse landscapes and rich cultural experiences.</p>
+            </div>
 
-            <label for="no">Yes</label>
-            <input type="radio" id="yes" name="yesorno" value="yes">
+            <div class="col-md-4 bg-primary p-4">
+                <h2>Places to Visit</h2>
+                <ul>
+                    <li><strong>Playa Blanca:</strong> Here we rent a jet ski for two hours and explore the whole island. We saw some coral reefs and a huge variety of endemic fishes</li>
+                    <li><strong>Tayrona National Park:</strong> In this place, we saw like 21 beaches each more beautiful than the other. The water was like crystal; we could see our reflection in it.</li>
+                    <li><strong>Tayrona Gold Museum:</strong> In the museum, we saw a lot of this society's art pieces made of gold. It is amazing how they manipulate the gold with the technology limitations.</li>
+                </ul>
+            </div>
 
-            <label for="no">No</label>            
-            <input type="radio" id="no" name="yesorno" value="no">
-            
-            <input type="submit" value="Submit">
-        </form>
-    </main>
+            <div class="col-md-4 bg-danger p-4">
+                <h2>Interactive Column</h2>
+                <p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 bg-success p-4">
+                <h2>Local Cuisine Exploration</h2>
+                <p>I'm a really big fan of seafood, that's why I enjoyed this trip so much. Basically, as we were on the coast of Colombia, we "had to" have fish for breakfast, lunch, and dinner with coconut rice, patacon, and aguapanela as a drink.</p>
+            </div>
+
+            <div class="col-md-4 bg-secondary p-4 text-light border-bottom">
+                <h2>Souvenir Shopping</h2>
+                <p>We bought a lot of local things like Wayuu Mochilas, jewelry made of sea shells.</p>
+            </div>
+
+            <div class="col-md-4 bg-light p-4 text-dark">
+                <h2>Souvenir Shopping</h2>
+                <p>We bought a lot of local things like Wayuu Mochilas, jewelry made of sea shells.</p>
+            </div>
+
+        </div>
+
+        <div class="row mt-4">
+
+            <div class="col-md-6 bg-info p-4">
+                <h2>Conclusions</h2>
+                <p>I really enjoy this trip and not only because we were on the beach, eating delicious food and enjoying the amazing Colombian culture but mainly because I was with my family before leaving the country.</p>
+            </div>
+
+            <div class="col-md-6 bg-secondary p-4 text-light border-top border-right">
+                <h2>Funny Moments</h2>
+                <p>This happened at night, so we wanted to buy a "Coco Loco" that is basically a coconut filled up with multiple types of liquours but it was so expensive and I had to go up in the stage to sign and dance to get one for free.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
