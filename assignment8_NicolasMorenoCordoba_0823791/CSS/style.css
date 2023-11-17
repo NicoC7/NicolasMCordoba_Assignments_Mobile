@@ -12,6 +12,35 @@
 --cyan:    #0dcaf0;
 }
 
+.card {
+    margin: 2rem !important;
+}
+
+body .footer {
+    max-width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .FooterLinks {
+    letter-spacing: 1px;
+  }
+  .FooterLinks a {
+    margin-left: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .footer {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto; 
+}
+
 @media (max-width: 576px) {
     body.bg-sm {
         background-color: var(--indigo) !important; 
