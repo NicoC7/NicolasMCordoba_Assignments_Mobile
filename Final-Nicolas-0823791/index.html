@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <!-- jQuery Validate -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+        <script src="JS/script.js"></script>
+
+        <title>Nicolas Website</title>
+
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container mt-5">
+            <div class="bg-info mb-6">
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-7-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.37 5.11h3.972v.07L6.025 12H7.42l3.258-6.85V4.002H5.369v1.107Z"/>
+                  </svg>
+                </div>
+
+                <h1>Nicolas Website</h1>
+            </div>
+
+            <!-- Accordion -->
+            <div class="accordion mb-1" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Flight To Colombia
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            My flight is on December 2 because I will get 19 on December 7 and I have to prove that I'm studying so I don't have to go the military.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion mb-1" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Flight Back To Canada
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            My flight is on January 11 because I'm taking advantage of the situation to share with my family back in my country but I will come back to Canada to finish the program.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion mb-1" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            Colombia Information
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Colombia is south american country. It has acces to both Pacific ocean and The Caribean sea, Colombia is known for exporting one of the best quality Coffees and Emeralds.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+
+            <!-- Card -->
+            <div class="card mt-4" style="width: 18rem;">
+                <img src="IMG/Flag_of_Colombia.svg.png" class="card-img-top" alt="Flag of Colombia">
+                <div class="card-body">
+                    <h5 class="card-title">Falg of Colombia</h5>
+                    <p class="card-text">The colors of the flag of Colombia have a meaninig. Yellow represents the wealth of the Colombian lands. Blue represents the beatiness of the Colombian ocean, sea, lakes, rivers, etc. And Red means the blood spilled by the Colombians when they fighted for the indepency</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="card mt-4" style="width: 18rem;">
+                <img src="IMG/Cano-Cristales-el-rio-de-colores-en-La-Macarena-Meta-1024x681-1024x681.jpg" class="card-img-top" alt="Canno Cristales">
+                <div class="card-body">
+                    <h5 class="card-title">Colombian Landscape</h5>
+                    <p class="card-text">Canno Cristales is a river found in Meta department, Colombia. It used to be a touristic place but now the goverment protect it for the its value and keep it preserve and out of the society destrution.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+
+            <hr/>
+
+            <!-- Form -->
+
+            <form class=" myForm order-0 ">
+                <div class="form-group order-0 ">
+                  <label for="exampleFormControlInput1">Headline</label>
+                  <input type="text" class="form-control" id="headline" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">File to Upload Article</label>
+                    <input type="file" class="form-control-file" id="file" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Author</label>
+                    <input type="text" class="form-control" id="author" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Date</label>
+                    <input type="date" class="form-control" id="date" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Category</label>
+                  <select class="form-control" id="category" required>
+                    <option>Medicine</option>
+                    <option>Technology</option>
+                    <option>Engineering</option>
+                    <option>Sports</option>
+                    <option>Music</option>
+                  </select>
+                </div>
+                <button class="mb-5 mt-1"type="submit">Submit</button>
+              </form>
+
+              <div class="footer bg-dark" id="footer">
+                <div class="logo text-light">
+                    Nicolas Website
+                </div>
+        
+                <div class="FooterLinks">
+                    <a class="text-light" href="https://www.youtube.com/watch?v=-DOP_WG_2rc&pp=ygULcmlja3kgdHJvbGw%3D">Privacy Policy</a>
+                    <a class="text-light" href="https://www.youtube.com/watch?v=-DOP_WG_2rc&pp=ygULcmlja3kgdHJvbGw%3D">Terms of Use</a>
+                    <a class="text-light" href="tel:+1(519) 966-1656">Call Me</a>
+                    <a class="text-light" href="mailto:w0823791@myscc.ca">Email Me</a>
+                </div>
+            </div>
+
+    </body>
+</html>
