@@ -1,25 +1,37 @@
 $(document).ready(function () {
     $("#myForm").validate({
         rules: {
+            headline: {
             minlength: 3,
-            required: true,
+            required: true
+            },
             file: {
-                extension: doc|pdf,
+                required: true,
+                extension: "doc|pdf",
             },
             author: {
                 required: true,
                 minlength: 3
+            },
+            date: {
+                required: true
             }
         },
         messages: {
-            headline: "The minimun legth is 3 characters",
+            headline: {
+                minlength: "The minimun legth is 3 characters",
+                required: "Please enter a headline"
+            },
             file: {
                 required: "Please enter the document",
-                extension: "Please enter a document type doc or pdf"
+                extension:"select valied input file format"
             },
             author: {
                 required: "Please enter an author",
                 minlength: "The minimun lenght is 3 characters"
+            },
+            date: {
+                required: "Please enter a date"
             }
         }
     });
