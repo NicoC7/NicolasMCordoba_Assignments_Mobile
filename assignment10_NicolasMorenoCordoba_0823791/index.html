@@ -3,35 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Form</title>
+    <title>Nicolas Moreno Technology</title>
     <link rel="stylesheet" href="CSS/style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
+<body class="bg-info">
+
+  <div class="container">
+    <!-- Header -->
+    <div class="row">
+      <div class="col-12 text-center mt-4 bg-dark text-light">
         <h1>Nicolas Moreno Cordoba</h1>
-    </header>
-    <main>
-        <form>
-            <label for="full-name">Full Name:</label>
-            <input type="text" id="full-name" name="full-name">            
+      </div>
+    </div>
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email">
+    <!-- Image with Caption -->
+    <div class="mt-4 bg-primary text-light">
+      <div class="col-12 text-center">
+        <img src="IMG/zfilp.webp" class="img-fluid" alt="Samsumg ZFlip5">
+        <p class="mt-2">ZFlip5: Bend the Future with Dual Screens - A Revolution in Flexibility and Functionality.</p>
+      </div>
+    </div>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone">
+    <div class="row">
+        <!-- Table -->
+        <div class="mt-4 bg-danger order-md-2">
+            <div class="col-12">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Iphone 15 pro max</td>
+                        <td>$ 2.499.99</td>
+                        <td>15 Units Left</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Samsumg Galaxy S23 Ultra</td>
+                        <td>$ 2.349.00</td>
+                        <td>9 Units Left</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Asus VivoBook 23</td>
+                        <td>$ 1.289.99</td>
+                        <td>3 Units Left</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>    
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
+        <!-- Form -->
+        <div class="mt-4 bg-warning order-md-1">
+            <div class="col-12">
+                <form>
+                    <div class="form-group">
+                        <label for="productName">Product Name</label>
+                        <select class="form-control" id="productName">
+                        <option>Iphone 15 pro max</option>
+                        <option>Samsumg Galaxy S23 Ultra</option>
+                        <option>Asus VivoBook 23</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderSwitch">Would you like to order</label>
+                        <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="orderSwitch">
+                        <label class="custom-control-label" for="orderSwitch"></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantityRange">Quantity</label>
+                        <input type="range" class="form-control-range" id="quantityRange" min="1" max="10">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
 
-            <label for="no">Yes</label>
-            <input type="radio" id="yes" name="yesorno" value="yes">
+  </div>
 
-            <label for="no">No</label>            
-            <input type="radio" id="no" name="yesorno" value="no">
-            
-            <input type="submit" value="Submit">
-        </form>
-    </main>
+  <!-- Include Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
